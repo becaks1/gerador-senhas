@@ -93,7 +93,7 @@ body{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
     border: 2px solid var(--borda);
-    
+    padding: 24px;
 
 }
 @media screen and (min-width: 768px) {
