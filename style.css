@@ -95,6 +95,7 @@ body{
     border: 2px solid var(--borda);
     padding: 24px;
     font-size: 24px;
+    cursor: pointer;
 }
 .parametro-senha_texto{
     padding: 24px;
@@ -102,7 +103,7 @@ body{
     border-bottom: 2px solid var(--borda); */
     font-size:24px;
     margin: 0;
-    cursor: pointer;
+   
 
 }
 
