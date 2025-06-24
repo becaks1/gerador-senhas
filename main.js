@@ -13,4 +13,4 @@ botaoSenha[0].onclick = diminuiTamanhoSenha = () => {
 botaoSenha[1].onclick = aumentaTamanhoSenha = () => {
     numeroSenha.textContent = tamanhoSenha;
     tamanhoSenha++;
-}
+};
