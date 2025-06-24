@@ -4,7 +4,7 @@ const botaoSenha = document.querySelector("parametros-senha_botao");
 let tamanhoSenha = 6;
 numeroSenha.textContent = tamanhoSenha;
 
-//console.log(botaoSenha);
+console.log(botaoSenha);
 
 botaoSenha[0].onclick = diminuiTamanhoSenha = () => {
     if (tamanhoSenha > 1) {
