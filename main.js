@@ -8,7 +8,9 @@ console.log(botaoSenha);
 
 botaoSenha[0].onclick = diminuiTamanhoSenha = () => {
     numeroSenha.textContent = tamanhoSenha;
+    tamanhoSenha--;
 }
 botaoSenha[1].onclick = aumentaTamanhoSenha = () => {
     numeroSenha.textContent = tamanhoSenha;
+    tamanhoSenha++;
 }
