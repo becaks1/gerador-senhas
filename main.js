@@ -7,10 +7,18 @@ numeroSenha.textContent = tamanhoSenha;
 console.log(botaoSenha);
 
 botaoSenha[0].onclick = diminuiTamanhoSenha = () => {
-    numeroSenha.textContent = tamanhoSenha;
-    tamanhoSenha--;
+    if(tamanhoSenha > 1){
+    
+       tamanhoSenha--;
 }
-botaoSenha[1].onclick = aumentaTamanhoSenha = () => {
+    }
     numeroSenha.textContent = tamanhoSenha;
-    tamanhoSenha++;
+   
+botaoSenha[1].onclick = aumentaTamanhoSenha = () => {
+    if (tamanhoSenha < 20) {
+
+        tamanhoSenha++;
+    
+    numeroSenha.textContent = tamanhoSenha;
+    }
 };
