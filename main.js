@@ -57,9 +57,9 @@ function gerarSenha() {
     console.log(alfabeto);
     let senhaGerada = "";
     for (let i = 0; i < tamanhoSenha; i++) {
-        let numeroAleatorio = Math.floor(Math.random() * letrasMaiusculas.length);
+        let numeroAleatorio = Math.floor(Math.random() * alfabeto.length);
         //console.log(letrasMaiusculas[numeroAleatorio]);
-        senhaGerada += letrasMaiusculas[numeroAleatorio];
+        senhaGerada += alfabeto[numeroAleatorio];
     }
     campoSenha.value = senhaGerada;
 }
