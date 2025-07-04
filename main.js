@@ -23,15 +23,32 @@ botaoSenha[1].onclick = aumentaTamanhoSenha = () => {
     gerarSenha();
 };
 const checkbox = document.querySelectorAll(".checkbox");
-console.log(checkbox);
-
-
+console.log(checkbox[1].checked);
 
 const letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letrasMinusculas = "abcdefghijklmnopqrstuvwxyz";
+const numeros = "0123456789";
+const símbolos = "!@#$%*()_+-=\§{}:><];.´ªº~°─,";
+
 campoSenha.value = letrasMaiusculas;
 gerarSenha();
 
 function gerarSenha() {
+    let alfabeto ="";
+    if (checkbox[0].checked) {
+        alfabeto += letrasMaiusculas;
+    }
+    if (checkbox[1].checked) {
+        alfabeto += letrasMinusculas;
+    }
+    if (checkbox[2].checked) {
+        alfabeto += numeros;
+    }
+    if (checkbox[3].checked) {
+        alfabeto += símbolos;
+    }
+     
+    console.log(alfabeto);
     let senhaGerada = "";
     for (let i = 0; i < tamanhoSenha; i++) {
         let numeroAleatorio = Math.floor(Math.random() * letrasMaiusculas.length);
