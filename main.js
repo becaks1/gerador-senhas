@@ -22,6 +22,10 @@ botaoSenha[1].onclick = aumentaTamanhoSenha = () => {
     numeroSenha.textContent = tamanhoSenha;
     gerarSenha();
 };
+const checkbox = document.querySelectorAll(".checkbox");
+console.log(checkbox);
+
+
 
 const letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 campoSenha.value = letrasMaiusculas;
