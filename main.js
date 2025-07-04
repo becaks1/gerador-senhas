@@ -23,7 +23,13 @@ botaoSenha[1].onclick = aumentaTamanhoSenha = () => {
     gerarSenha();
 };
 const checkbox = document.querySelectorAll(".checkbox");
-console.log(checkbox[1].checked);
+//console.log(checkbox[1].checked);
+for(i = 0; i < checkbox.length; i++){
+    checkbox[i].onclick = () => {
+        gerarSenha();
+    };
+
+}
 
 const letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const letrasMinusculas = "abcdefghijklmnopqrstuvwxyz";
