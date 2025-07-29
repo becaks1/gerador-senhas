@@ -2,7 +2,7 @@ const numeroSenha = document.querySelector(".parametros-senha__texto");
 const botaoSenha = document.querySelectorAll(".parametros-senha__botao");
 const campoSenha = document.querySelector("#campo-senha");
 
-let tamanhoSenha = 4;
+let tamanhoSenha = 12;
 numeroSenha.textContent = tamanhoSenha;
 
 //console.log(botaoSenha);
@@ -67,6 +67,12 @@ function gerarSenha() {
 const forcaSenha = document.querySelector(".forca");
 
 function classificaSenha(){
-    forcaSenha.classList.add("forte");
+    forcaSenha.classList.remove("fraca","media","forte");
+        if (tamanhoSenha > 11){
 
-}
+    forcaSenha.classList.add("forte");
+        }else {
+            forcaSenha.classList.add("media");
+        }
+
+        }
