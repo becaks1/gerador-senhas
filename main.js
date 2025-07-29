@@ -62,4 +62,11 @@ function gerarSenha() {
         senhaGerada += alfabeto[numeroAleatorio];
     }
     campoSenha.value = senhaGerada;
+    classificaSenha();
+}
+const forcaSenha = document.querySelector(".forca");
+
+function classificaSenha(){
+    forcaSenha.classList.add("forte");
+
 }
